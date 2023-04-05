@@ -104,7 +104,8 @@ If a OneDrive is noncompliant, this report lets you update the OneDrive to be co
 6. Run the following command to view details about the noncompliant segments associated with each site:
 
       ```PowerShell
-      $report = Get-SPOInformationBarriersPolicyComplianceReport -reportid <ID> $report.Content
+      $report = Get-SPOInformationBarriersPolicyComplianceReport -reportid <ID> 
+      $report.Content
       ```
 
     (Where *ID* is the report's ID from the previous step.)
